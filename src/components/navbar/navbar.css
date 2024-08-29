@@ -1,0 +1,49 @@
+.navbar-main{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-ctn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.667vw 5vw;
+}
+
+.navbar-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-title > h1{
+    font-size: 1.25vw;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.navbar-title > img{
+    width: 3.125vw;
+    height: 1.83vw;
+}
+
+.navbar-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 25%;
+}
+
+.navbar-links > li{
+    text-decoration: none;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+
+.navbar-props{
+    text-decoration: none;
+}
