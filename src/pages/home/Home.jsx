@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./home.css";
 import playstore from "../../images/playstoreicon.png"
 import appstore from "../../images/appstoreicon.png";
@@ -12,8 +12,12 @@ import cream from "../../images/cream.png";
 import order from "../../images/order.png";
 import delivery from "../../images/delivery.png";
 import hat from "../../images/slidehat.png";
+import hood from "../../images/slidehood.png";
+import girl from "../../images/slidegirl.png";
 import rev from "../../images/sliderev.png";
 import profile3 from "../../images/profile3.png";
+import profile2 from "../../images/profile2.png";
+import profile1 from "../../images/profile1.png";
 import iphone from "../../images/iphone.png";
 import down from "../../images/arrowdown.png";
 import map from "../../images/map.png";
@@ -39,6 +43,56 @@ const Home = () => {
     const toggleCourse = (course) => {
       setOpenCourse(openCourse === course ? null : course);
     };
+
+
+const reviews = [
+    {
+        imgSrc: profile3,
+        name: "Samuel Osaigbovo",
+        role: "Food Enthusiast",
+        review: "“Supermart is the best. Besides the many and delicious meals offered by vendors, the service is also very good, especially in the very fast delivery. I highly recommend Supermart!”",
+        rating: 4.5,
+        hatSrc: hat,
+        revSrc: rev,
+        starsSrc: stars,
+    },
+    {
+        imgSrc: profile2,
+        name: "Bright Endowese",
+        role: "Chef",
+        review: "“Beyond the wide selection of delicious meals from various vendors, they also offer a great range of supermarket and home care items. The service is top-notch, with incredibly fast delivery.”",
+        rating: 4.8,
+        hatSrc: hood,
+        revSrc: rev,
+        starsSrc: stars,
+    },
+    {
+        imgSrc: profile1,
+        name: "Eloho Emmanuella",
+        role: "Entrepreneur",
+        review: "“Supermart has become my go-to for all my personal care and home essentials. I never have to leave the house or worry about running out of supplies. The convenience is next to none.”",
+        rating: 4.6,
+        hatSrc: girl,
+        revSrc: rev,
+        starsSrc: stars,
+    },
+];
+
+
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Automatic slideshow change every 5 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 5000);
+
+        return () => clearInterval(interval); // Cleanup interval on unmount
+    }, []);
+
 
   return (
     <div className='home-main'>
@@ -174,14 +228,14 @@ const Home = () => {
             <div className='slideshow'>
                 <div className='slide-img'>
                     <img
-                        src={hat}
+                        src={reviews[currentIndex].hatSrc}
                         width="auto"
                         height="auto"
                         alt='icon'
                     />
                     <div className='slide-rev-img'>
                         <img
-                            src={rev}
+                            src={reviews[currentIndex].revSrc}
                             width="auto"
                             height="auto"
                             alt='icon'
@@ -191,31 +245,43 @@ const Home = () => {
                 <div className='slide-content'>
                     <h2>WHAT THEY SAY</h2>
                     <h1>What Our Customers Say About Us</h1>
-                    <p>
-                        “Supermart is the best. Besides the many and delicious meals offered 
-                        by vendors, the service is also very good, especially in the very  
-                        fast delivery. I highly recommend Supermart!”.
-                    </p>
+                    <p>{reviews[currentIndex].review}</p>
                     <div className='slide-profile'>
                         <img
-                            src={profile3}
+                            src={reviews[currentIndex].imgSrc}
                             width="auto"
                             height="auto"
                             alt='icon'
                         />
                         <div className='slide-name'>
-                            <h1>Samuel Osaigbovo</h1>
-                            <p>Food Enthusiast</p>
+                            <h1>{reviews[currentIndex].name}</h1>
+                            <p>{reviews[currentIndex].role}</p>
                         </div>
                     </div>
                     <div className='slide-rating'>
                         <img
-                            src={stars}
+                            src={reviews[currentIndex].starsSrc}
                             width="auto"
                             height="auto"
                             alt='icon'
                         />
-                        <p>4.5</p>
+                        <p>{reviews[currentIndex].rating}</p>
+                    </div>
+                    <div className="indicator">
+                        {reviews.map((_, idx) => (
+                            <div
+                                key={idx}
+                                className={currentIndex === idx ? "active" : ""}
+                                style={{
+                                    width: '10px',
+                                    height: '10px',
+                                    background: currentIndex === idx ? 'rgba(244, 85, 112, 1)' : 'grey',
+                                    borderRadius: '50%',
+                                    margin: '5px',
+                                    transition: 'background 0.3s ease',
+                                }}
+                            ></div>
+                        ))}
                     </div>
                 </div>
             </div>
