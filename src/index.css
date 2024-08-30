@@ -1,6 +1,82 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Light.ttf") format("truetype"); 
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-LightItalic.ttf") format("truetype"); 
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-MediumItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins"; 
+  src: url("./fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins"; 
+  src: url("./fonts/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins"; 
+  src: url("./fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins"; 
+  src: url("./fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 00;
+  font-style: italic;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

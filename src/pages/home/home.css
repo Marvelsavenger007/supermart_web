@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
 .home-main{
-    margin: 1rem 5vw;
+    margin: 0;
     padding: 0;
     overflow: hidden;
 }
@@ -8,6 +12,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 90%;
+    margin: 4% auto;
 }
 
 .home-top-text{
@@ -17,7 +23,7 @@
 .home-top-text > h1{
     font-family: "Rubik";
     font-weight: 700;
-    font-size: 3.125vw;
+    font-size: 4.125vw;
     text-align: left;
     color: rgba(1, 15, 28, 1);
     margin: 5px 0;
@@ -38,6 +44,7 @@
     font-size: 1.042vw;
     color: rgba(51, 51, 51, 1);
     width: 24vw;
+    font-weight: 500;
 }
 
 .home-top-dld {
@@ -67,6 +74,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 90%;
+    margin: 4% auto;
 }
 
 .home-top-review{
@@ -75,8 +84,8 @@
 }
 
 .home-top-review > img{
-    width: 7.76vw;
-    height: 3.385vw;
+    width: 9.76vw;
+    height: 4.385vw;
 }
 
 .home-happy-csm {
@@ -85,7 +94,7 @@
 
 
 .home-happy-csm > p{
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-weight: 500;
 }
 
@@ -120,23 +129,534 @@
     justify-content: space-between;
     padding: 0.5vw 0.781vw;
     box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
-    width: 14.823vw;
+    border-radius: 2.6vw;
+    width: 18.823vw;
+    height: 4.69vw;
 }
 
 .home-top-agent > img{
-    width: 2.448vw;
-    height: 2.448vw;
+    width: 3.448vw;
+    height: 3.448vw;
 }
 
 .home-agent-text > h1{
-    font-size: 0.781vw;
+    font-size: 0.881vw;
     font-weight: 500;
     color: rgba(0, 0, 0, 1);
 }
 
 .home-agent-text > p{
-    font-size: 0.625vw;
+    font-size: 0.725vw;
     font-weight: 500;
     color: rgba(130, 130, 130, 1);
+}
+
+.home-top-cream{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-top-cream > img{
+    width: 5.885vw;
+    height: 5.052vw;
+}
+
+.home-cream-text {
+    margin-left: 1vw;
+}
+
+.home-cream-text > p{
+    font-size: 0.933vw;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.home-cream-text > p > span{
+    font-size: 0.621vw;
+    font-weight: 700;
+    color: rgba(235, 0, 41, 1);
+}
+
+.home-cream-text > img{
+    width: 4.375vw;
+    height: 0.625vw;
+    padding: 0;
+    margin-bottom: 2vh;
+}
+
+.home-offer-main{
+    text-align: center;
+    width: 90%;
+    margin: 10% auto;
+}
+
+.home-offer-main > p{
+    font-size: 0.938vw;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    color: rgba(255, 88, 43, 1);    
+}
+
+.home-offer-main> h1{
+    font-family: "Rubik";
+    font-size: 3.344vw;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(1, 15, 28, 1);    
+}
+
+.offer-ctn-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offer-ctn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+}
+
+.offer-ctn > img{
+    width: 12.083vw;
+}
+
+.offer-ctn > h1{
+    font-size: 1.468vw;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);    
+}
+
+.offer-ctn > p{
+    font-size: 1vw;
+    font-weight: 300;
+    color: rgba(51, 51, 51, 1);
+    margin: 0;
+    padding: 0;
+}
+
+.home-slideshow{    
+    width: 90%;
+    margin: 4% auto;
+}
+
+.slideshow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slide-img{
+    width: 50%;
+    position: relative;
+}
+
+.slide-rev-img{
+    margin-top: -20%;
+    margin-left: 35%;
+
+}
+
+.slide-rev-img > img{
+    width: 19.698vw;
+    height: 15.385vw;
+}
+
+.slide-img > img {
+    width: 32vw;
+    height: 33vw;
+}
+
+.slide-content{
+    width: 40%;
+}
+
+.slide-content > h2{
+    font-size: 0.938vw;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-align: left;
+    color: rgba(235, 0, 41, 1);    
+}
+
+.slide-content > h1{
+    font-family: "Rubik";
+    font-size: 2.344vw;
+    font-weight: 700;
+    text-align: left;
+    color: rgba(1, 15, 28, 1);    
+}
+
+.slide-content > p{
+    font-size: 1.042vw;
+    font-weight: 300;
+    text-align: left;
+    width: 80%;
+    color: rgba(51, 51, 51, 1);    
+}
+
+.slide-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.slide-profile > img{
+    width: 3.333vw;
+    height: 3.333vw;
+}
+
+.slide-name > h1{
+    font-size: 1.042vw;
+    font-weight: 300;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);   
+    margin: 0;
+    padding: 0; 
+}
+
+.slide-name > p{
+    font-size: 0.833vw;
+    font-weight: normal;
+    text-align: left;
+    color: rgba(130, 130, 130, 1);    
+    margin: 0;
+    padding: 0;
+}
+
+.slide-rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.slide-rating > img{
+    width: 9.01vw;
+    height: 1.25vw;
+}
+
+.slide-rating > p{
+    font-size: 0.781vw;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 1vw;
+}
+
+.home-mart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1.563vw;
+    background-color: rgba(255, 221, 204, 0.25);
+    width: 89%;
+    height: 35.979vw;
+    margin: 4% auto;
+}
+
+.mart-text{
+    margin-left: 5%;
+}
+
+.mart-text > h2{
+    font-size: 0.938vw;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-align: left;
+    color: rgba(235, 0, 41, 1);
+}
+
+.mart-text > h1{
+    font-size: 2.5vw;
+    font-weight: 700;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);   
+    margin: 0;
+    padding: 0; 
+}
+
+.mart-text > p{
+    font-size: 1.146vw;
+    font-weight: 300;
+    text-align: left;
+    color: rgba(51, 51, 51, 1);
+    width: 70%;
+}
+
+.mart-img{
+    margin-right: -7%;
+    margin-top: -5%;
+}
+
+.mart-img > img{
+    width: 55.618vw;
+    height: 50.448vw;
+}
+
+
+.faqs{
+    width: 80%;
+    margin: 4% auto;
+}
+
+.faqs > h1{
+    font-family: "Rubik";
+    font-size: 1.875vw;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: rgba(1, 15, 28, 1);    
+}
+
+.course-week {
+    margin-bottom: 0.3rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+  
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.833vw 1.667vw;
+    background-color: rgba(243, 243, 243, 1);
+    border: none;
+    cursor: pointer;
+}
+  
+.course-header span {
+    font-size: 1.146vw;
+    font-weight: 300;
+    text-align: left;
+}
+  
+.arrow-icon {
+    width: 1.146vw;
+    height: 0.573vw;
+    transition: transform 0.3s ease;
+}
+  
+.rotate-up {
+    transform: rotate(-180deg);
+}
+  
+.rotate-down {
+    transform: rotate(0deg);
+}
+  
+.course-content-detail {
+    padding: 0.833vw;
+    background-color: rgba(249, 241, 235, 1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    border-radius: 1vh;
+}
+  
+.course-item {
+    font-size: 1.146vw;
+    font-weight: 400;
+    text-align: left;;
+    margin-bottom: 2vh;
+    list-style-type: none;
+    background-color: rgba(249, 241, 235, 1);
+}
+
+.contact{
+    width: 85%;
+    margin: 5% auto;
+}
+
+.contact > h1{
+    font-family: "Rubik";
+    font-size: 1.875vw;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(1, 15, 28, 1);
+    margin: 0;    
+    padding: 0;
+}
+
+.contact-ctn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    margin: 2% auto;
+}
+
+.contact-img{
+    width: 50%;
+}
+
+.contact-img > img{
+    width: 34.604vw;
+    height: 33.625vw;
+}
+
+
+.contact-details{
+    width: 50%;
+    
+}
+
+
+.contact-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row .form-group {
+    margin-right: 10px;
+}
+
+.row .form-group:last-child {
+    margin-right: 0;
+}
+
+.contact-form input, textarea {
+    padding: 0.521vw;
+    font-size: 1.042vw;
+    border: 0.84px solid rgba(229, 231, 235, 1);
+    border-radius: 4px;
+    height: 2.229vw;
+}
+
+::placeholder{
+    font-family: "Rubik";
+    font-size: 1.042vw;
+    font-weight: 500;
+    text-align: left; 
+    padding-left: 0.5vw;   
+    padding-top: 0.1vh;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-form button {
+    padding: 0.821vw 0.781vw;
+    font-size: 1.042vw;
+    background-color: rgba(240, 142, 19, 1);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%;
+    margin: 2vh auto;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(240, 142, 19, 0.8);
+}
+
+
+textarea {
+    height: 9.333vw;
+    resize: none; 
+    padding-top: 3vh;
+    padding-left: 0.7vw;
+}
+
+.home-btm{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    border-radius: 1.563vw;
+    background-color: rgba(46, 30, 1, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.home-btm > h1{
+    font-family: "Rubik";
+    font-size: 2.24vw;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0  auto 2% auto;
+    padding-top: 3%;
+    width: fit-content;
+}
+
+.footer-title > h1{
+    font-family: "Rubik";
+    font-size: 2.083vw;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 10px
+}
+
+.footer-title > img{
+    width: 4.844vw;
+    height: 2.865vw;
+}
+
+
+.home-btm-dld {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.home-btm-dld > img{
+    width: 11.881vw;
+    height: 3.542vw;
+    margin-right: 1.3vh;
+    cursor: pointer;
+}
+
+.footer-ctn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.footer-links{
+    text-decoration: none;
+    list-style-type: none;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-links > img{
+    width: 1.198vw;
+    height: 1.198vw;
+    margin-right: 0.7vw;
+}
+
+.footer-links > p{
+    font-family: "                                  ";
+    font-size: 0.904vw;
+    font-weight: 700;
+    line-height: 24.3px;
+    text-align: left;
+
 }
