@@ -365,7 +365,7 @@ const Home = () => {
                     />
                     <p>Twitter</p>
                 </a>
-                <a href='/' className='footer-links'>
+                <a href='https://www.instagram.com/supermartapp/' className='footer-links'>
                     <img
                         src={gram}
                         width="auto"
