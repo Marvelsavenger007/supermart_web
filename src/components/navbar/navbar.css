@@ -1,14 +1,19 @@
 .navbar-main{
+    position: fixed;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1;
 }
 
 .navbar-ctn{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.667vw 5vw;
+    padding: 1.067vw 5vw;
+    height: auto;
 }
 
 .navbar-title{
@@ -62,6 +67,7 @@
 @media screen and (max-width: 768px) {
     .navbar-ctn{
         background-color: rgba(249, 249, 249, 1);
+        position: relative;
     }
     .navbar-title > h1{
         font-size: 12.09px;
@@ -83,18 +89,17 @@
     .navbar-menu {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 3%;
+        position: fixed;
+        top: 4.1%;
         left: 0;
         width: 89%;
-        height: 8%;
+        height: 100px;
         background-color: rgba(255, 255, 255, 1);
         z-index: 1;
         padding: 1rem 1.5rem;
     }
 
     .navbar-link{
-        
         font-size: 14px;
         font-weight: 400;
         text-align: left;
@@ -105,4 +110,19 @@
         display: flex;
     }
 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar-title > h1{
+        font-size: 2.344vw;
+    }   
+
+    .navbar-title > img{
+        width: 5.859vw;
+        height: auto;
+    }
+
+    .navbar-link {
+        font-size: 1.367vw;
+    }
 }

@@ -33,8 +33,6 @@ import linked from "../../images/linkedin.png";
 import iphoneprt from "../../images/iphoneprt.webp";
 import topfoodprt from "../../images/topfoodprt.webp";
 import diverse from "../../images/diverse.png";
-
-
 import baking1 from "../../images/baking1.webp";
 import baking2 from "../../images/baking2.webp";
 import bakingbar from "../../images/bakingbar.png";
@@ -341,7 +339,7 @@ const Home = () => {
                             src={item.titleImage} 
                             alt='icon' 
                             className="shop-title-image"
-                            style={{ width: item.imageDimensions.width, height: item.imageDimensions.height }}
+                            // style={{ width: item.imageDimensions.width, height: item.imageDimensions.height }}
                         />
                         {item.title}
                         </li>
@@ -410,7 +408,7 @@ const Home = () => {
                         />
                         <div className='slide-name'>
                             <h1>{reviews[currentIndex].name}</h1>
-                            <p>{reviews[currentIndex].role}</p>
+                            {/* <p>{reviews[currentIndex].role}</p>/ */}
                         </div>
                     </div>
                     <div className='slide-rating'>

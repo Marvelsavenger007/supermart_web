@@ -23,14 +23,14 @@ const Navbar = () => {
                 />
                 <h1>SuperMart</h1>
             </div>
-            <ul className={isOpen ? "navbar-menu active" : "navbar-menu"}>
+            <div className={isOpen ? "navbar-menu active" : "navbar-menu"}>
                 <li>
                     <Link to="/#frequently-asked-questions" className='navbar-link'>Faqs</Link>
                 </li>
                 <li>
                     <Link to="/#contact-us" className='navbar-link'>Contact us</Link>
                 </li>
-            </ul>
+            </div>
             <div className="navbar-ham-btn">
                 <img 
                     src={responsivebtn}
