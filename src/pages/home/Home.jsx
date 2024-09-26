@@ -115,8 +115,6 @@ const Home = () => {
         },
     ];
 
-
-
     const [currentIndex, setCurrentIndex] = useState(0);
 
     // Automatic slideshow change every 5 seconds
@@ -301,7 +299,7 @@ const Home = () => {
                     <h1>Easy To Order</h1>
                     <p>You only need a few steps to order food or supermarket items</p>
                 </div>
-                <div className='offer-ctn'>
+                <div className='offer-ctn1'>
                     <img
                         src={delivery}
                         width="auto"
@@ -363,14 +361,18 @@ const Home = () => {
                 </div>
                     <h2>{content[activeIndex].description}</h2>
                     <div className="shop-images">
-                    <img 
-                        src={content[activeIndex].images[0]} 
-                        alt="icon"
-                    />
-                    <img 
-                        src={content[activeIndex].images[1]} 
-                        alt="icon"
-                    />
+                        <img 
+                            src={content[activeIndex].images[0]} 
+                            alt="icon" 
+                            loading="lazy" 
+                            // style={{ width: content[activeIndex].imageDimensions.width, height: content[activeIndex].imageDimensions.height }}
+                        />
+                        <img 
+                            src={content[activeIndex].images[1]} 
+                            alt="icon" 
+                            loading="lazy" 
+                            // style={{ width: content[activeIndex].imageDimensions.width, height: content[activeIndex].imageDimensions.height }}
+                        />
                     </div>
                 </div>
             </div>
