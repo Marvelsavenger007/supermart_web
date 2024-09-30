@@ -14,6 +14,7 @@ const Navbar = () => {
   return (
     <div className='navbar-main'>
         <div className='navbar-ctn'>
+        
             <div className='navbar-title'>
                 <img
                     src={logo}
@@ -25,9 +26,11 @@ const Navbar = () => {
             </div>
             <div className={isOpen ? "navbar-menu active" : "navbar-menu"}>
                 <li>
+                    {/* <Link to="/faqs" className='navbar-link'>Faqs</Link> */}
                     <Link to="/#frequently-asked-questions" className='navbar-link'>Faqs</Link>
                 </li>
                 <li>
+                    {/* <Link to="/contact-us" className='navbar-link'>Contact us</Link> */}
                     <Link to="/#contact-us" className='navbar-link'>Contact us</Link>
                 </li>
             </div>

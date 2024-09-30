@@ -1,0 +1,95 @@
+
+
+.policy-container{
+    display: flex;
+    flex-direction: column;
+    background: rgba(249, 249, 250, 1);
+    margin-bottom: 50px;
+}
+
+.policy-container > h1{
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 69px;
+    letter-spacing: -0.06em;
+    text-align: center;
+}
+
+.policy-content{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.policy-details > h2 {
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 69px;
+    letter-spacing: -0.06em;
+}
+
+.policy-details > p {
+    font-family: "Inter";
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: left;
+}
+
+.policy-sub-heading {
+    font-family: "Inter";
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+}
+.policy-list-items {
+    font-family: "Inter";
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: left;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .policy-main {
+      margin: 0 auto; /* Center align the container */
+      text-align: center;
+    }
+
+    .policy-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .policy-container > h1{
+        font-family: "Montserrat";
+        font-weight: 700;
+        letter-spacing: -0.06em;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .policy-details > h2 {
+        font-family: "Montserrat";
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .policy-details > p {
+        font-family: "Inter";
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+
+
+}

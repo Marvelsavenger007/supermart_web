@@ -1,54 +1,51 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./home.css";
-import playstore from "../../images/playstoreicon.png";
-import appstore from "../../images/appstoreicon.png";
-import topfoood from "../../images/topfood.webp";
-import review from "../../images/review.png";
-import star from "../../images/star.png";
-import guy from "../../images/maletop.png";
-import call from "../../images/call.png";
-import stars from "../../images/stars.png";
-import cream from "../../images/cream.png";
-import order from "../../images/order.png";
-import delivery from "../../images/delivery.png";
-import hat from "../../images/slidehat.webp";
-import hood from "../../images/slidehood.webp";
-import girl from "../../images/slidegirl.webp";
-import hoodMobile from "../../images/hoodprt.png";
-import girlMobile from "../../images/girlprt.png";
-import hatMobile from "../../images/hatprt.png";
-import rev from "../../images/sliderev.webp";
-import profile3 from "../../images/profile3.png";
-import profile2 from "../../images/profile2.png";
-import profile1 from "../../images/profile1.png";
-import iphone from "../../images/iphone.webp";
-import down from "../../images/arrowdown.png";
-import map from "../../images/map.png";
-import logo from "../../images/LOGO.png";
-import x from "../../images/twitter.png";
-import gram from "../../images/instagram.png";
-import face from "../../images/facebook.png";
-import linked from "../../images/linkedin.png";
-import iphoneprt from "../../images/iphoneprt.webp";
-import topfoodprt from "../../images/topfoodprt.webp";
-import diverse from "../../images/diverse.png";
-import baking1 from "../../images/baking1.webp";
-import baking2 from "../../images/baking2.webp";
-import bakingbar from "../../images/bakingbar.png";
-import bake1 from "../../images/bake1.webp";
-import bake2 from "../../images/bake2.webp";
-import bakebar from "../../images/bakebar.png";
-import meat1 from "../../images/meat1.webp";
-import meat2 from "../../images/meat2.webp";
-import meatbar from "../../images/meatbar.png";
-import freshbar from "../../images/freshbar.png";
-import fresh1 from "../../images/fresh1.webp";
-import fresh2 from "../../images/fresh2.webp";
-import cleanbar from "../../images/cleanbar.png";
-import cleaning1 from "../../images/cleaning1.webp";
-import cleaning2 from "../../images/cleaning2.webp";
+import playstore from "../images/playstoreicon.png";
+import appstore from "../images/appstoreicon.png";
+import topfoood from "../images/topfood.webp";
+import review from "../images/review.png";
+import star from "../images/star.png";
+import guy from "../images/maletop.png";
+import call from "../images/call.png";
+import stars from "../images/stars.png";
+import cream from "../images/cream.png";
+import order from "../images/order.png";
+import delivery from "../images/delivery.png";
+import hat from "../images/slidehat.webp";
+import hood from "../images/slidehood.webp";
+import girl from "../images/slidegirl.webp";
+import hoodMobile from "../images/hoodprt.png";
+import girlMobile from "../images/girlprt.png";
+import hatMobile from "../images/hatprt.png";
+import rev from "../images/sliderev.webp";
+import profile3 from "../images/profile3.png";
+import profile2 from "../images/profile2.png";
+import profile1 from "../images/profile1.png";
+import iphone from "../images/iphone.webp";
+import down from "../images/arrowdown.png";
+import map from "../images/map.png";
+import iphoneprt from "../images/iphoneprt.webp";
+import topfoodprt from "../images/topfoodprt.webp";
+import diverse from "../images/diverse.png";
+import baking1 from "../images/baking1.webp";
+import baking2 from "../images/baking2.webp";
+import bakingbar from "../images/bakingbar.png";
+import bake1 from "../images/bake1.webp";
+import bake2 from "../images/bake2.webp";
+import bakebar from "../images/bakebar.png";
+import meat1 from "../images/meat1.webp";
+import meat2 from "../images/meat2.webp";
+import meatbar from "../images/meatbar.png";
+import freshbar from "../images/freshbar.png";
+import fresh1 from "../images/fresh1.webp";
+import fresh2 from "../images/fresh2.webp";
+import cleanbar from "../images/cleanbar.png";
+import cleaning1 from "../images/cleaning1.webp";
+import logo from "../images/LOGO.png";
+import cleaning2 from "../images/cleaning2.webp";
 import { Toaster, toast } from "react-hot-toast";
+import Footer from "./footer";
 
 const Home = () => {
 
@@ -638,38 +635,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="home-btm">
-        <div className="footer-title">
-          <img src={logo} width="auto" height="auto" alt="logo" />
-          <h1>SuperMart</h1>
-        </div>
-        <h1>Swift Food and Grocery Delivery</h1>
-        <div className="home-btm-dld">
-          <img src={playstore} width="auto" height="auto" alt="icon" />
-          <img src={appstore} width="auto" height="auto" alt="icon" />
-        </div>
-        <div className="footer-ctn">
-          <a href="/" className="footer-links">
-            <img src={x} width="auto" height="auto" alt="icon" />
-            <p>Twitter</p>
-          </a>
-          <a
-            href="https://www.instagram.com/supermartapp/"
-            className="footer-links"
-          >
-            <img src={gram} width="auto" height="auto" alt="icon" />
-            <p>Instagram</p>
-          </a>
-          <a href="/" className="footer-links">
-            <img src={face} width="auto" height="auto" alt="icon" />
-            <p>Facebook</p>
-          </a>
-          <a href="/" className="footer-links">
-            <img src={linked} width="auto" height="auto" alt="icon" />
-            <p>Linkedin</p>
-          </a>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };
